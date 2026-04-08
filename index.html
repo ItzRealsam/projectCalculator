@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Realsam's Calculator</title>
+
+  <link rel="stylesheet" href="styles/10-Calculator-Project.css">
+</head>
+<body>
+    <div class="calculator">
+      <div class="calculator__display">
+        <div class="calculator__display--history"><p>tesing1</p><p>testing2</p></div>
+        <div class="calculator__display--answer">answer</div>
+        <div class="calculator__display--working">
+          <p class="calculator__display--placeholder">0</p>
+        </div>
+        <div class="calculator__display--preview">preview</div>
+      </div>
+      
+      <div class="calculator__keys">
+        <button class="calculator__key calculator__key--clear"
+          onclick="
+          clearDisplay();
+        ">AC</button>
+        <button class="calculator__key">+/-</button>
+        <button class="calculator__key">%</button>
+        <button class="calculator__key calculator__key--operator"
+          onclick="
+          appendNumber('/');
+        ">/</button>
+
+        <button class="calculator__key"
+          onclick="
+          appendNumber(7);
+        ">7</button>
+        <button class="calculator__key"
+          onclick="
+          appendNumber(8);
+        ">8</button>
+        <button class="calculator__key"
+          onclick="
+          appendNumber(9);
+        ">9</button>
+        <button class="calculator__key calculator__key--operator"
+          onclick="
+          appendNumber('*');
+        ">*</button>
+
+        <button class="calculator__key"
+          onclick="
+          appendNumber(4);
+        ">4</button>
+        <button class="calculator__key"
+          onclick="
+          appendNumber(5);
+        ">5</button>
+        <button class="calculator__key"
+          onclick="
+          appendNumber(6);
+        ">6</button>
+        <button class="calculator__key calculator__key--operator"
+          onclick="
+          appendNumber('-');
+        ">-</button>
+
+        <button class="calculator__key"
+          onclick="
+          appendNumber(1);
+        ">1</button>
+        <button class="calculator__key"
+          onclick="
+          appendNumber(2);
+        ">2</button>
+        <button class="calculator__key"
+          onclick="
+          appendNumber(3);
+        ">3</button>
+        <button class="calculator__key calculator__key--operator"
+          onclick="
+          appendNumber('+');
+        ">+</button>
+
+        <button class="calculator__key calculator__key--zero"
+          onclick="
+          appendNumber('e');
+        ">e</button>
+        <button class="calculator__key"
+          onclick="
+          appendNumber('.');
+        ">.</button>
+        <button class="calculator__key calculator__key--zero"
+          onclick="
+          appendNumber(0);
+        ">0</button>
+        <button class="calculator__key calculator__key--equal"
+          onclick="
+          calculate();
+        ">=</button>
+      </div>
+     
+    </div>
+
+
+  <script src="scripts/10-Calculator-Project.js"></script>
+</body>
+</html>
